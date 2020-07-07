@@ -9,7 +9,7 @@ namespace AJSuperMarketConApp
         static void Main(string[] args)
         {
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
-            Console.WriteLine("Welcome to AJ Super Market!");
+            Console.WriteLine("Welcome to AJ Super Market123!");
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
             int option = askOption();
 
