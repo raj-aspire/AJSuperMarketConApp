@@ -1,0 +1,13 @@
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.exe
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.deps.json
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.runtimeconfig.json
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.runtimeconfig.dev.json
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.dll
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\bin\Release\netcoreapp3.1\AJSuperMarketConApp.pdb
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.csprojAssemblyReference.cache
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.AssemblyInfoInputs.cache
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.AssemblyInfo.cs
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.csproj.CoreCompileInputs.cache
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.dll
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.pdb
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Release\netcoreapp3.1\AJSuperMarketConApp.genruntimeconfig.cache
