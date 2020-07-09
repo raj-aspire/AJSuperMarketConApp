@@ -25,7 +25,7 @@ namespace AJSuperMarketConAppXUnitTest
             iService.CreateProduct(new Product { ProductID = 1, ProductName = "Fridge" });
             iService.CreateProduct(new Product { ProductID = 2, ProductName = "Television" });
 
-            Assert.NotEqual(2, iService.GetProducts().Count);
+            Assert.NotEqual(1, iService.GetProducts().Count);
         }
 
         [Fact]
