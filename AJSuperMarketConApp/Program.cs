@@ -5,8 +5,11 @@ using AJSuperMarketConApp.Model;
 
 namespace AJSuperMarketConApp
 {
+    public int unUsedPublicVariableCheckRK = 0;
+    
     public static class Program
     {
+        int unUsedPrivateVariableCheckRK = 0;
         private static InventoryService prodService = new InventoryService();
 
         private static void Main()
