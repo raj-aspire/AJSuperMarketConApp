@@ -7,6 +7,10 @@ namespace AJSuperMarketConApp
 {
     public static class Program
     {
+<<<<<<< HEAD
+=======
+        static int unUsedPrivateVariableCheckRK = 0;
+>>>>>>> c246a0409d55c0521d931b4e28aa5c13bfcd7ac7
         private static InventoryService prodService = new InventoryService();
 
         private static void Main()
