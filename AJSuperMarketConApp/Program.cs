@@ -5,15 +5,13 @@ using AJSuperMarketConApp.Model;
 
 namespace AJSuperMarketConApp
 {
-    public int unUsedPublicVariableCheckRK = 0;
-    
     public static class Program
     {
-        int unUsedPrivateVariableCheckRK = 0;
         private static InventoryService prodService = new InventoryService();
 
         private static void Main()
         {
+            int counter = 0;
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
             Console.WriteLine("Welcome to AJ Super Market123!");
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
