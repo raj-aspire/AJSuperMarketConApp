@@ -7,7 +7,7 @@ namespace AJSuperMarketConApp
 {
     public static class Program
     {
-        int unUsedPrivateVariableCheckRK = 0;
+        static int unUsedPrivateVariableCheckRK = 0;
         private static InventoryService prodService = new InventoryService();
 
         private static void Main()
