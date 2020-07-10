@@ -11,6 +11,7 @@ namespace AJSuperMarketConApp
 
         private static void Main()
         {
+            int myCounter = 0;
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
             Console.WriteLine("Welcome to AJ Super Market123!");
             Console.WriteLine("= = = = = = = = = = = = = = = = = = = =");
