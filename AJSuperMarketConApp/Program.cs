@@ -5,8 +5,6 @@ using AJSuperMarketConApp.Model;
 
 namespace AJSuperMarketConApp
 {
-    public int unUsedPublicVariableCheckRK = 0;
-    
     public static class Program
     {
         int unUsedPrivateVariableCheckRK = 0;
