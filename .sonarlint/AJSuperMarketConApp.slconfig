@@ -1,0 +1,12 @@
+{
+  "ServerUri": "http://localhost:9000/",
+  "Organization": null,
+  "ProjectKey": "myfirstsqproject",
+  "ProjectName": "myfirstsqproject",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AXMz5qGR7_DXyYMADqky",
+      "ProfileTimestamp": "2020-07-09T14:06:59Z"
+    }
+  }
+}

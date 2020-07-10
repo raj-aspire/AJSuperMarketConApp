@@ -1,0 +1,40 @@
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\BusinessLayer\IInventoryService.cs
+CreateProduct 3
+CreateProduct -1
+UpdateProduct 3
+UpdateProduct -1
+GetProducts 3
+GetProducts -1
+GetProduct 3
+GetProduct -1
+DeleteProduct 3
+DeleteProduct -1
+
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\BusinessLayer\InventoryService.cs
+CreateProduct 48
+CreateProduct -1
+DeleteProduct 5
+DeleteProduct -1
+GetProduct 3
+GetProduct -1
+GetProducts 7
+GetProducts -1
+UpdateProduct 3
+UpdateProduct -1
+LoadDefault 7
+LoadDefault -1
+
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\Model\Product.cs
+
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\Program.cs
+Main 9
+Main -1
+process 3
+process -1
+AskOption 3
+AskOption -1
+
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\obj\Debug\netcoreapp3.1\AJSuperMarketConApp.AssemblyInfo.cs
+

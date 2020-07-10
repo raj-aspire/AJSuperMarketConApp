@@ -7,7 +7,6 @@ namespace AJSuperMarketConApp
 {
     public static class Program
     {
-        private static List<Product> products = new List<Product>();
         private static InventoryService prodService = new InventoryService();
 
         private static void Main()
@@ -123,21 +122,6 @@ namespace AJSuperMarketConApp
             {
                 return 5;
             }
-        }
-
-        private static List<Product> LoadProducts()
-        {
-
-            if (products.Count == 0)
-                LoadDefault();
-
-            return products;
-        }
-
-        private static void LoadDefault()
-        {
-            products.Add(new Product { ProductID = 1, ProductName = "Toor Dhall" });
-            products.Add(new Product { ProductID = 2, ProductName = "Orid Dhall" });
         }
     }
 }

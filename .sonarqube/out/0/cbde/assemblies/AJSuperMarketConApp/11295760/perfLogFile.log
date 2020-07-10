@@ -1,0 +1,5 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\BusinessLayer\InventoryService.cs	9	_AJSuperMarketConApp.BusinessLayer.InventoryService.CreateProduct$AJSuperMarketConApp.Model.Product$	0	2
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\BusinessLayer\InventoryService.cs	34	_AJSuperMarketConApp.BusinessLayer.InventoryService.GetProducts$$	0	5
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\BusinessLayer\InventoryService.cs	50	_AJSuperMarketConApp.BusinessLayer.InventoryService.LoadDefault$$	0	3
+D:\RK\github\raj-aspire\AJSuperMarketConApp\AJSuperMarketConApp\Program.cs	11	_AJSuperMarketConApp.Program.Main$$	3	303
