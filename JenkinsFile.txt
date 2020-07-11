@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps{
+                git credentialsId: 'Rajkumar.joseph@aspiresys.com', url: 'https://github.com/raj-aspire/AJSuperMarketConApp.git', branch: 'master'
+            }
+        }
+        stage('Build'){
+            steps{
+                bat "dotnet build --configuration Release"
+            }
+        }
+        stage('Test'){
+            steps{
+                bat "dotnet test --no-build --logger \"trx;LogFileName=unit_tests.trx\""
+            }
+        }
+        stage('Publish Test Result'){
+            steps{
+                step([$class: 'MSTestPublisher', testResultsFile:"**/*.trx", failOnError: true, keepLongStdio: true])
+            }
+        }
+	}
+}
