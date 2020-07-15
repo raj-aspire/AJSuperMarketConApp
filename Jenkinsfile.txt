@@ -7,24 +7,19 @@ pipeline {
                 git credentialsId: 'Rajkumar.joseph@aspiresys.com', url: 'https://github.com/raj-aspire/AJSuperMarketConApp.git', branch: 'master'
             }
         }
-        stage('Build'){
-            steps{
-                bat "dotnet build --configuration Release"
-            }
-        }
+	stage('Build + SonarQube analysis') {
+    		def sqScannerMsBuildHome = tool 'Scanner for MSBuild 4.6'
+    		withSonarQubeEnv('MySonarQubeMSBuild') {
+      		  bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.dll begin /k:myKey"
+      		  bat "MSBuild.exe /t:Rebuild"
+      		  bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.dll end"
+    		}
+  	}
         stage('Test'){
             steps{
                 bat "dotnet test --no-build --logger \"trx;LogFileName=unit_tests.trx\""
             }
         }
-	stage('Code Analysis'){
-	    def sqScannerMsBuildHome = tool 'Scanner for MSBuild 4.7'
-	    withSonarQubeEnv('MySonarQubeMSBuild') {
-	      bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe begin /k:myKey"
-	      bat 'MSBuild.exe /t:Rebuild'
-	      bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe end"
-	    }
-	}
         stage('Publish Test Result'){
             steps{
                 step([$class: 'MSTestPublisher', testResultsFile:"**/*.trx", failOnError: true, keepLongStdio: true])
