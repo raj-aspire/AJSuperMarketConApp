@@ -7,16 +7,11 @@ pipeline {
                 git credentialsId: 'Rajkumar.joseph@aspiresys.com', url: 'https://github.com/raj-aspire/AJSuperMarketConApp.git', branch: 'master'
             }
         }
-	stage('Build + SonarQube analysis') {
-	    steps{
-    		def sqScannerMsBuildHome = tool 'Scanner for MSBuild 4.6'
-		withSonarQubeEnv(credentialsId: 'SonarQubeSecToken') {
-    			bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe begin /k:myKey"
-	      		bat 'MSBuild.exe /t:Rebuild'
-	      		bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe end"
-		}
-	    }
-  	}
+	stage('Build'){
+ 	  steps{
+    	    bat "dotnet build --configuration Release"
+  	  }
+	}
         stage('Test'){
             steps{
                 bat "dotnet test --no-build --logger \"trx;LogFileName=unit_tests.trx\""
