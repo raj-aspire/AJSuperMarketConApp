@@ -19,9 +19,9 @@ pipeline {
         }
 	stage('Code Analysis'){
 	    steps{
-	    	bat "dotnet C:\Users\rajkumar.joseph\sonar-scanner-msbuild-4.7.1.2311-netcoreapp2.0\SonarScanner.MSBuild.dll begin /k:\"SonarQube scan from Jenkinsfile\""
+	    	bat "dotnet \"C:\Users\rajkumar.joseph\sonar-scanner-msbuild-4.7.1.2311-netcoreapp2.0\SonarScanner.MSBuild.dll\" begin /k:\"SonarQube scan from Jenkinsfile\""
 		bat "dotnet build "
-		bat "dotnet C:\Users\rajkumar.joseph\sonar-scanner-msbuild-4.7.1.2311-netcoreapp2.0\SonarScanner.MSBuild.dll end /d:sonar.login=\"9ab9ab2e9bbda077d032e4402d0b041a79217cd2\""
+		bat "dotnet \"C:\Users\rajkumar.joseph\sonar-scanner-msbuild-4.7.1.2311-netcoreapp2.0\SonarScanner.MSBuild.dll\" end /d:sonar.login=\"9ab9ab2e9bbda077d032e4402d0b041a79217cd2\""
 	    }
 	}
         stage('Publish Test Result'){
